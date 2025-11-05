@@ -62,7 +62,7 @@ export default function Navbar({ darkMode, toggleDarkMode }: NavbarProps) {
             onClick={() => scrollToSection('home')}
             className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent hover:scale-105 transition-transform"
           >
-            GS.
+            GS
           </button>
 
           <div className="hidden md:flex items-center gap-8">
