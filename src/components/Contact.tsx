@@ -1,5 +1,6 @@
 import { useState, FormEvent } from 'react';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
+import emailjs from "@emailjs/browser";
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
 
 export default function Contact() {
@@ -40,7 +41,7 @@ export default function Contact() {
   };
 
   // ✅ Submit Handler
-  const handleSubmit = async (e: FormEvent) => {
+/*   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!validateForm()) return;
 
@@ -68,8 +69,41 @@ export default function Contact() {
       setIsSubmitting(false);
       setTimeout(() => setSubmitSuccess(false), 5000);
     }
-  };
+  }; */
 
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    if (!validateForm()) return;
+
+    setIsSubmitting(true);
+
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID ||
+          process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID ||
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY ||
+          process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
+      );
+
+      setSubmitSuccess(true);
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      console.error("❌ Email sending failed:", error);
+      alert("Failed to send message. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+      setTimeout(() => setSubmitSuccess(false), 5000);
+    }
+  };
+  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
