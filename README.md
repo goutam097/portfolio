@@ -1,10 +1,10 @@
-🌟 Personal Portfolio Website
+## 🌟 Personal Portfolio Website
 
 Welcome to my personal portfolio website — a modern, responsive, and interactive web application built using TypeScript, JavaScript, HTML, and CSS.
 This project showcases my skills, projects, and experience in web development, along with a seamless real-time contact form powered by EmailJS
  ✉️.
 
- 🚀 Features
+ ## 🚀 Features
 
 ✨ Modern UI & Responsive Design
 Crafted with clean HTML and CSS for a sleek look that adapts perfectly to any device — desktop, tablet, or mobile.
@@ -22,7 +22,7 @@ Send messages directly from the website — no backend required! Visitors can co
 Unique hover effects, smooth scrolling, and attention to detail in every UI element.
 
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 | Technology            | Purpose                             |
 | --------------------- | ----------------------------------- |
@@ -46,12 +46,12 @@ portfolio/
 └── README.md
 
 
-⚙️ Setup & Installation
+## ⚙️ Setup & Installation
 
 Follow these steps to run the project locally 👇
 
 # 1️⃣ Clone this repository
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/goutam097/portfolio
 
 # 2️⃣ Navigate to project folder
 cd portfolio
@@ -85,17 +85,17 @@ emailjs.send(
 );
 That’s it — your contact form is live and functional 🚀.
 
-📸 Screenshots
+## 📸 Screenshots
 
 | Home Page                       | Contact Form                          |
 | ------------------------------- | ------------------------------------- |
 | ![Home](./screenshots/home.png) | ![Contact](./screenshots/contact.png) |
 
-🌐 Live Demo
+## 🌐 Live Demo
 
 🔗 Visit My Portfolio: https://portfolio-eaa7.vercel.app/
 
-🤝 Connect With Me
+## 🤝 Connect With Me
 
 Let’s connect and collaborate!
 
@@ -105,7 +105,7 @@ Let’s connect and collaborate!
 
 🐙 GitHub: https://github.com/goutam097
 
-🏁 Conclusion
+## 🏁 Conclusion
 
 This portfolio is not just a collection of work — it’s a reflection of my passion for building beautiful, functional web experiences.
 Every section, line of code, and animation was designed with precision and creativity in mind.
