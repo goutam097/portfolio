@@ -33,19 +33,6 @@ Unique hover effects, smooth scrolling, and attention to detail in every UI elem
 | **EmailJS**           | Real-time email service integration |
 
 
-portfolio/
-│
-├── index.html          # Main HTML file
-├── src/
-│   ├── assets/         # Images, icons, and static files
-│   ├── styles/         # CSS files and modules
-│   ├── scripts/        # TypeScript and JavaScript files
-│   └── components/     # Reusable UI components
-├── package.json
-├── tsconfig.json
-└── README.md
-
-
 ## ⚙️ Setup & Installation
 
 Follow these steps to run the project locally 👇
