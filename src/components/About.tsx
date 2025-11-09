@@ -37,7 +37,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                I'm a passionate Full Stack Developer with over 5 years of experience building
+                I'm a passionate Full Stack Developer with over 3 years of experience building
                 modern web applications. I specialize in React, Node.js, and creating seamless
                 user experiences that make a difference.
               </p>
