@@ -18,7 +18,7 @@ export default function Skills() {
       skills: [
         { name: 'Node.js / Express', level: 90 },
         { name: 'REST APIs', level: 95 },
-        { name: 'GraphQL', level: 80 },
+        // { name: 'GraphQL', level: 80 },
         { name: 'Authentication', level: 90 }
       ]
     },
@@ -26,10 +26,10 @@ export default function Skills() {
       icon: Database,
       title: 'Database',
       skills: [
-        { name: 'PostgreSQL', level: 85 },
+        // { name: 'PostgreSQL', level: 85 },
         { name: 'MongoDB', level: 85 },
-        { name: 'Supabase', level: 90 },
-        { name: 'Redis', level: 75 }
+        // { name: 'Supabase', level: 90 },
+        // { name: 'Redis', level: 75 }
       ]
     },
     {
@@ -37,9 +37,10 @@ export default function Skills() {
       title: 'Tools & Others',
       skills: [
         { name: 'Git / GitHub', level: 95 },
-        { name: 'Docker', level: 80 },
+        // { name: 'Docker', level: 80 },
         { name: 'CI/CD', level: 85 },
-        { name: 'AWS / Vercel', level: 85 }
+        // { name: 'AWS / Vercel', level: 85 },
+        { name: 'Vercel', level: 85 }
       ]
     }
   ];
@@ -48,7 +49,8 @@ export default function Skills() {
     { name: 'React', icon: Layout },
     { name: 'Node.js', icon: Server },
     { name: 'TypeScript', icon: Code2 },
-    { name: 'PostgreSQL', icon: Database },
+    { name: 'Angular', icon: Code2 },
+    // { name: 'PostgreSQL', icon: Database },
     { name: 'Tailwind', icon: Smartphone },
     { name: 'Git', icon: Wrench }
   ];

@@ -41,35 +41,35 @@ export default function Contact() {
   };
 
   // ✅ Submit Handler
-/*   const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    if (!validateForm()) return;
-
-    setIsSubmitting(true);
-
-    try {
-      await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID || process.env.REACT_APP_EMAILJS_SERVICE_ID!,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message
-        },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY || process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
-      );
-
-      setSubmitSuccess(true);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (error) {
-      console.error('❌ Email sending failed:', error);
-      alert('Failed to send message. Please try again later.');
-    } finally {
-      setIsSubmitting(false);
-      setTimeout(() => setSubmitSuccess(false), 5000);
-    }
-  }; */
+  /*   const handleSubmit = async (e: FormEvent) => {
+      e.preventDefault();
+      if (!validateForm()) return;
+  
+      setIsSubmitting(true);
+  
+      try {
+        await emailjs.send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID || process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID || process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
+          {
+            from_name: formData.name,
+            from_email: formData.email,
+            subject: formData.subject,
+            message: formData.message
+          },
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY || process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
+        );
+  
+        setSubmitSuccess(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } catch (error) {
+        console.error('❌ Email sending failed:', error);
+        alert('Failed to send message. Please try again later.');
+      } finally {
+        setIsSubmitting(false);
+        setTimeout(() => setSubmitSuccess(false), 5000);
+      }
+    }; */
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -80,9 +80,9 @@ export default function Contact() {
     try {
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID ||
-          process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+        process.env.REACT_APP_EMAILJS_SERVICE_ID!,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID ||
-          process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -90,7 +90,7 @@ export default function Contact() {
           message: formData.message,
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY ||
-          process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
       );
 
       setSubmitSuccess(true);
@@ -103,7 +103,7 @@ export default function Contact() {
       setTimeout(() => setSubmitSuccess(false), 5000);
     }
   };
-  
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
@@ -112,9 +112,9 @@ export default function Contact() {
 
   // Contact info cards
   const contactInfo = [
-    { icon: Mail, title: 'Email', content: 'john@example.com', link: 'mailto:john@example.com' },
-    { icon: Phone, title: 'Phone', content: '+1 (555) 123-4567', link: 'tel:+15551234567' },
-    { icon: MapPin, title: 'Location', content: 'San Francisco, CA', link: null }
+    { icon: Mail, title: 'Email', content: 'goutamsingh313@gmail.com', link: 'mailto:goutamsingh313@gmail.com' },
+    { icon: Phone, title: 'Phone', content: '+91 9476448744', link: 'tel:+91 9476448744' },
+    { icon: MapPin, title: 'Location', content: 'Kharagpur, West Bengal', link: null }
   ];
 
   return (
@@ -164,9 +164,8 @@ export default function Contact() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 rounded-lg border ${
-                      errors.name ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
-                    } bg-white dark:bg-gray-900 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600`}
+                    className={`w-full px-4 py-3 rounded-lg border ${errors.name ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
+                      } bg-white dark:bg-gray-900 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600`}
                     placeholder="John Doe"
                   />
                   {errors.name && <p className="mt-1 text-sm text-red-500">{errors.name}</p>}
@@ -182,9 +181,8 @@ export default function Contact() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 rounded-lg border ${
-                      errors.email ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
-                    } bg-white dark:bg-gray-900 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600`}
+                    className={`w-full px-4 py-3 rounded-lg border ${errors.email ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
+                      } bg-white dark:bg-gray-900 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600`}
                     placeholder="john@example.com"
                   />
                   {errors.email && <p className="mt-1 text-sm text-red-500">{errors.email}</p>}
@@ -201,9 +199,8 @@ export default function Contact() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 rounded-lg border ${
-                    errors.subject ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
-                  } bg-white dark:bg-gray-900 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600`}
+                  className={`w-full px-4 py-3 rounded-lg border ${errors.subject ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
+                    } bg-white dark:bg-gray-900 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600`}
                   placeholder="Project Inquiry"
                 />
                 {errors.subject && <p className="mt-1 text-sm text-red-500">{errors.subject}</p>}
@@ -219,9 +216,8 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={6}
-                  className={`w-full px-4 py-3 rounded-lg border ${
-                    errors.message ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
-                  } bg-white dark:bg-gray-900 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600 resize-none`}
+                  className={`w-full px-4 py-3 rounded-lg border ${errors.message ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
+                    } bg-white dark:bg-gray-900 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600 resize-none`}
                   placeholder="Tell me about your project..."
                 ></textarea>
                 {errors.message && <p className="mt-1 text-sm text-red-500">{errors.message}</p>}
