@@ -76,7 +76,7 @@ That’s it — your contact form is live and functional 🚀.
 
 | Home Page                       | Contact Form                          |
 | ------------------------------- | ------------------------------------- |
-| ![Home](https://github.com/goutam097/portfolio/blob/2f813133964a089c1c4c0b02844768b98b14f791/Screenshot%202025-11-09%20195234.png) | ![Contact](./screenshots/contact.png) |
+| ![Home](https://github.com/goutam097/portfolio/blob/2f813133964a089c1c4c0b02844768b98b14f791/Screenshot%202025-11-09%20195234.png) | ![Contact](https://github.com/goutam097/portfolio/blob/3f85c4dacd0ad80b58041668a654cd32d6137ee8/Screenshot%202025-11-09%20195330.png) |
 
 ## 🌐 Live Demo
 
