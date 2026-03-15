@@ -1,11 +1,13 @@
 import { ExternalLink, Github } from 'lucide-react';
+import sticky from '../assets/stick-img.png'
 
 export default function Projects() {
   const projects = [
     {
       title: 'Sticky Notes',
       description: 'A modern sticky notes web application built with Next.js and TypeScript that allows users to create, edit, and manage notes with a clean, responsive, and user-friendly interface.',
-      image: 'https://github.com/goutam097/assets/blob/main/assets/decoded-image.png',
+      // image: 'https://github.com/goutam097/assets/blob/main/assets/decoded-image.png',
+      image: sticky,
       tags: ['Next.js', 'Typescript','Tailwind','Vercel'],
       github: 'https://github.com/goutam097/sticky-notes',
       demo: 'https://sticky-notes-ebon.vercel.app/'
